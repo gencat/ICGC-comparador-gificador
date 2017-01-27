@@ -1,0 +1,181 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+html body .container {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0px;
+}
+header {
+    /*min-height: 60px;*/
+    width: 100%;
+    background-color: #4496a1;
+    color: #ffffff;
+}
+footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #4496a1;
+  color: #ffffff;
+}
+header .subtitle{
+  background-color: #5cc8d5;
+  display: flex;
+  align-items: center;
+}
+
+footer div.row.links {
+  display: flex;
+  align-items: center;
+}
+
+header div.row.title{
+  display: flex;
+  align-items: center;
+}
+
+footer div.row.links div{
+  align-items: stretch;
+  vertical-align: middle;
+}
+
+header div.row.title div{
+  align-items: stretch;
+  vertical-align: middle;
+}
+
+header div.row.title div span{
+  align-items: center;
+}
+
+footer div.row.links div span{
+  align-items: center;
+}
+
+.links{
+  height: 40px;
+}
+
+.logo{
+  height: 67px; /*edad jubilacio JM*/
+}
+
+#mapid, #mapid1, #mapid2 {
+  height: 100%;
+}
+
+.info-btn{
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+.selectpicker{
+  background-color: #5cc8d5;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  color: #ffffff !important;
+}
+
+.btn-dropdown{
+  color: #ffffff;
+  border: none;
+  background-color: #5cc8d5;
+  border-radius: 0px;
+}
+
+.btn-dropdown:hover{
+  color: #ffffff;
+  background-color: #4496a1;
+}
+
+.btn-dropdown:focus{
+  color: #ffffff;
+  background-color: #5cc8d5;
+}
+
+.btn-dropdown .open{
+  color: #ffffff;
+  background-color: #4496a1;
+}
+
+
+.list-booksmarks div.dropdown-menu{
+  z-index: 6000;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+.btn-sticky{
+  position: fixed;
+  z-index: 3000;
+	bottom: 80px;
+}
+
+.btn-sticky button{
+  height: 55px;
+  width: 45%;
+}
+
+.btn-sticky button img{
+  height: 100%;
+  width: 100%;
+}
+
+.btn-sticky button.btn-swipe img{
+  width: 200%;
+  margin-left: -8px;
+}
+
+.btn-sticky button.selected img{
+  color: #ff0000;
+}
+
+.panel-sticky{
+  display: none;
+}
+.panel-sticky .panel{
+  margin-bottom: 0;
+}
+
+.panel-sticky .panel .panel-body{
+  padding: 7px 1px;
+}
+
+.enllaca{
+  cursor: pointer;
+}
+
+.jssocials-share, .jssocials-share-link{
+    background-color: #4496a1 !important;
+}
