@@ -26,8 +26,10 @@ $(function() {
   var layer1 = 'costa2016_25831';
   var layer2 = 'costa2017_25831';
 */
-  var servicio2 = 'http://shagrat.icc.cat/lizardtech/iserv/ows?';
-  var layer2 = 'of25ctempcost201701';
+  //var servicio2 = 'http://shagrat.icc.cat/lizardtech/iserv/ows?';
+  var servicio2 = 'http://mapcache.icc.cat/map/costa/service/service?';
+  //var layer2 = 'of25ctempcost201701';
+  var layer2 = 'costa2701';
 
   var myLayer1 = L.tileLayer.wms(servicio1, {
     layers: layer1,
