@@ -9,7 +9,7 @@ var bookmarks = {
 { "type": "Feature", "properties": { "NOM": "Cambrils", "LON": "1.057080030441284", "LAT": "41.063910490901065" }, "geometry": { "type": "Point", "coordinates": [ 1.057080030441284, 41.063910490901065 ] } },
 { "type": "Feature", "properties": { "NOM": "Roda de Berà", "LON": "1.491501331329345", "LAT": "41.171644351024611" }, "geometry": { "type": "Point", "coordinates": [ 1.491501331329345, 41.171644351024611 ] } },
 { "type": "Feature", "properties": { "NOM": "Barcelona", "LON": "2.192866802215576", "LAT": "41.377074237926351" }, "geometry": { "type": "Point", "coordinates": [ 2.192866802215576, 41.377074237926351 ] } },
-{ "type": "Feature", "properties": { "NOM": "Arenys de Mar", "LON": "2.553374469280243", "LAT": "41.577565682771599" }, "geometry": { "type": "Point", "coordinates": [ 2.553374469280243, 41.577565682771599 ] } },
+{ "type": "Feature", "properties": { "NOM": "Arenys de Mar", "LON": "2.5633", "LAT": "41.5787" }, "geometry": { "type": "Point", "coordinates": [ 2.5633, 41.5787 ] } },
 { "type": "Feature", "properties": { "NOM": "Salou", "LON": "1.148248314857483", "LAT": "41.06837563232974" }, "geometry": { "type": "Point", "coordinates": [ 1.148248314857483, 41.06837563232974 ] } },
 { "type": "Feature", "properties": { "NOM": "Canet de Mar", "LON": "2.583200633525848", "LAT": "41.58640949951026" }, "geometry": { "type": "Point", "coordinates": [ 2.583200633525848, 41.58640949951026 ] } },
 { "type": "Feature", "properties": { "NOM": "Santa Susanna", "LON": "2.714079022407532", "LAT": "41.629032617713762" }, "geometry": { "type": "Point", "coordinates": [ 2.714079022407532, 41.629032617713762 ] } },

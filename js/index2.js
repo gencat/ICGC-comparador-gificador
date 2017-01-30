@@ -13,27 +13,22 @@ $(function() {
   var map2 = L.map('mapid2',{crs: crs25831, attributionControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
 
   //var hash3 = new L.Hash(map2);
-  /*
+/*
   var servicio1 = 'http://geoserveis.icgc.cat/icc_ortoxpres/wms/service?';
-  var servicio2 = 'http://geoserveis.icgc.cat/icc_ortoxpres/wms/service?';
   var layer1 = 'ox3dcat25c2016';
   var layer2 = 'ox3dtemporal2017';
-  */
-
+*/
   var servicio1 = 'http://mapcache.icc.cat/map/bases/service?';
   var layer1 = 'orto';
+
 /*
   var servicio1 = 'http://172.70.1.11/mapcache/?';
   var layer1 = 'costa2016_25831';
   var layer2 = 'costa2017_25831';
 */
-  /*
   var servicio2 = 'http://shagrat.icc.cat/lizardtech/iserv/ows?';
   var layer2 = 'of25ctempcost201701';
-  */
-  var servicio2 = 'http://geoserveis.icgc.cat/icc_ortoxpres/wms/service?';
-  var layer2 = 'ox3dtemporal2017';
-    
+
   var myLayer1 = L.tileLayer.wms(servicio1, {
     layers: layer1,
     format: 'image/jpeg',
