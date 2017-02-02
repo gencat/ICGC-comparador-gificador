@@ -37,12 +37,28 @@ header .subtitle{
   align-items: center;
 }
 
+header .subtitle div{
+  padding: 3px 0px;
+}
+
+header .subtitle2{
+  background-color: #4e7aff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
 footer div.row.links {
   display: flex;
   align-items: center;
 }
 
 header div.row.title{
+  display: flex;
+  align-items: center;
+}
+
+.modal-header div.title{
   display: flex;
   align-items: center;
 }
@@ -67,6 +83,15 @@ footer div.row.links div span{
 
 .modal{
   z-index: 5000;
+}
+
+.modal-header{
+  background-color: #3a5cc0;
+  color: #ffffff;
+}
+
+.modal-header .logo{
+  height: 50px;
 }
 
 .links{
