@@ -13,8 +13,8 @@ html body .container {
   height: 100%;
   padding: 0px;
 }
+
 header {
-    /*min-height: 60px;*/
     width: 100%;
     background-color: #3a5cc0;
     color: #ffffff;
@@ -31,6 +31,29 @@ footer {
   background-color: #3a5cc0;
   color: #ffffff;
 }
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+  html body .container {
+    position: fixed;
+  }
+
+  footer.footer{
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+  html body .container {
+    position: fixed;
+  }
+
+  footer.footer{
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
 header .subtitle{
   background-color: #4e7aff;
   display: flex;
