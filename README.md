@@ -13,7 +13,13 @@ Ejemplo
 - layer1: nombre de la capa del servicio WMS que se quiere mostrar
 - attribution1: texto de atribución de la capa.
 
-El archivo listBookmarks.js contiene un geojson de elementos (puntos) que aparecen en la herramienta de búsqueda. La herramienta de búsqueda utiliza la propiedad "NOM" para buscar los resultados. Al seleccionar un resultado el mapa se centra en la coordenada el punto.   
+### Herramienta de búsqueda
+
+El archivo listBookmarks.js contiene un geojson de elementos (puntos) que son los que aparecen como resultados en la herramienta de búsqueda. 
+
+La herramienta de búsqueda utiliza la propiedad "NOM" para buscar los resultados. 
+
+Al seleccionar un resultado el mapa se centra en la coordenada del punto.   
 
 ## License
 
