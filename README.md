@@ -1,5 +1,7 @@
 # Comparador Costa
 
+Herramienta para comparar 2 servicios WMS. 
+
 ## Instalación
 Copiar los archivos dentro de una carpeta en un servidor web
 
