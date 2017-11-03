@@ -8,34 +8,36 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comparador costa</title>
   </head>
   <body>
     <header>
       <div class="row title">
-        <div class="col-xs-2">
+        <div class="hidden-xs col-sm-2">
           <a href="http://www.icgc.cat" target="_blank" ><img src="css/Logo_icgc_blanc.png" alt="ICGC" class="logo"></a>
         </div>
-        <div class="col-xs-8 text-center">
-          <h4>VISOR DE L'EVOLUCIÓ DE LA COSTA</h4>
-          <h5>(litoral català)</h5>
+        <div class="col-xs-10 text-center">
+          <h5>VISOR DE L'EVOLUCIÓ DE LA COSTA</h5>
+          <h6 class="hidden-xs">(entre Arenys de Mar i Lloret de Mar - properament tot el litoral català)</h6>
         </div>
         <div class="col-xs-2 text-center">
           <span class="glyphicon glyphicon-info-sign info-btn" aria-hidden="true"></span>
         </div>
       </div>
-      <div class="row subtitle text-center">
-        <div class="col-xs-4">
-        Ortoimatge 2015
-        </div>
-        <div class="col-xs-4">
-          <select class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+      <div class="row subtitle2">
+        <div class="col-xs-12 text-center">
+          <select class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-primary btn-dropdown">
 
           </select>
         </div>
-        <div class="col-xs-4">
+      </div>
+      <div class="row subtitle text-center">
+        <div class="col-xs-6">
+        Ortoimatge 2015
+        </div>
+        <div class="col-xs-6">
         Temporal gener 2017
         </div>
       </div>
@@ -50,11 +52,11 @@
 
     <footer class="footer">
       <div class="row links">
-        <div class="col-xs-6 text-center enllaca">
+        <div class="hidden-xs col-sm-6 text-center enllaca">
           <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
           Enllaça
         </div>
-        <div class="col-xs-6 text-center">
+        <div class="col-xs-12 col-sm-6 text-center">
           <div id="share">
 
           </div>
@@ -66,7 +68,7 @@
           <img src="css/swipe.svg" alt="">
         </button>
       </div>
-      <div class="col-xs-2 col-xs-offset-5 text-center btn-sticky panel-sticky">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 text-center btn-sticky panel-sticky">
         <div class="panel panel-default">
           <div class="panel-body">
             <button type="button" class="btn btn-default btn-md btn-sync">
@@ -85,6 +87,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="title">
+              <div class="hidden-xs col-sm-3">
+                <a href="http://www.icgc.cat" target="_blank" ><img src="css/Logo_icgc_blanc.png" alt="ICGC" class="logo"></a>
+              </div>
+              <div class="col-xs-12 col-sm-9 text-center">
+                <h5>VISOR DE L'EVOLUCIÓ DE LA COSTA</h5>
+                <h6>(entre Arenys de Mar i Lloret de Mar - properament tot el litoral català)</h6>
+              </div>
+            </div>
           </div>
           <div class="modal-body">
             <p>L’Institut Cartogràfic i Geològic de Catalunya(ICGC) ha publicat un servei per comparar imatges aèries que permet avaluar els danys del temporal que ha devastat el litoral català els dies 21 i 22 de gener.</p>
@@ -130,7 +141,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
   <script src="js/leaflet-side-by-side.min.js"></script>
   <script src="js/L.Map.Sync.js"></script>
-  <script src="js/listBookmarks.js" charset="utf-8"></script>
-  <script src="js/index3.js" charset="utf-8"></script>
+  <script src="js/listBookmarks_demo.js" charset="utf-8"></script>
+  <script src="js/index2.js" charset="utf-8"></script>
   <script src="http://betaportal.icgc.cat/betaportal.google-analytics.js"></script>
 </html>

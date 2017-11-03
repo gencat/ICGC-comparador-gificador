@@ -13,22 +13,40 @@ html body .container {
   height: 100%;
   padding: 0px;
 }
+
 header {
-    /*min-height: 60px;*/
     width: 100%;
     background-color: #4496a1;
     color: #ffffff;
 }
+
+.title{
+  background-color: #4496a1;
+  color: #ffffff;
+}
+
 footer {
   width: 100%;
   min-height: 40px;
   background-color: #4496a1;
   color: #ffffff;
 }
+
 header .subtitle{
   background-color: #5cc8d5;
   display: flex;
   align-items: center;
+}
+
+header .subtitle div{
+  padding: 3px 0px;
+}
+
+header .subtitle2{
+  background-color: #5cc8d5;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 footer div.row.links {
@@ -37,6 +55,11 @@ footer div.row.links {
 }
 
 header div.row.title{
+  display: flex;
+  align-items: center;
+}
+
+.modal-header div.title{
   display: flex;
   align-items: center;
 }
@@ -57,6 +80,19 @@ header div.row.title div span{
 
 footer div.row.links div span{
   align-items: center;
+}
+
+.modal{
+  z-index: 5000;
+}
+
+.modal-header{
+  background-color: #4496a1;
+  color: #ffffff;
+}
+
+.modal-header .logo{
+  height: 50px;
 }
 
 .links{
@@ -178,4 +214,32 @@ footer div.row.links div span{
 
 .jssocials-share, .jssocials-share-link{
     background-color: #4496a1 !important;
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+
+    header .title{
+      display: none !important;
+    }
+
+    header .subtitle2{
+      display: none !important;
+    }
+
+    footer div.links{
+      display: none !important;
+    }
+
+    .btn-sticky{
+      bottom: 15px;
+    }
+
+    footer{
+      min-height: 0px;
+    }
+
+}
+
+@media (max-width: 768px) and (orientation:portrait) {
+
 }

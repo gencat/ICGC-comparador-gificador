@@ -32,28 +32,6 @@ footer {
   color: #ffffff;
 }
 
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1){
-  html body .container {
-    position: fixed;
-  }
-
-  footer.footer{
-    position: fixed;
-    bottom: 0px;
-  }
-}
-
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2){
-  html body .container {
-    position: fixed;
-  }
-
-  footer.footer{
-    position: fixed;
-    bottom: 0px;
-  }
-}
-
 header .subtitle{
   background-color: #4e7aff;
   display: flex;
