@@ -14,16 +14,18 @@ $(function() {
 
   var servicio1 = 'http://mapcache.icc.cat/map/bases/service?';
   var layer1 = 'orto';
+  var attribution1 = 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>';
 
   var servicio2 = 'http://mapcache.icc.cat/map/costa/service/service?';
   var layer2 = 'costa2701';
+  var attribution2 = 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>';
 
   var myLayer1 = L.tileLayer.wms(servicio1, {
     layers: layer1,
     format: 'image/jpeg',
     transparent: true,
     crs: crs25831,
-    attribution : 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>',
+    attribution : attribution1,
 });
 
   var myLayer2 = L.tileLayer.wms(servicio2, {
@@ -31,14 +33,14 @@ $(function() {
     format: 'image/jpeg',
     transparent: true,
     crs: crs25831,
-    attribution : 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>',
+    attribution : attribution2,
 });
 
   var myLayer3 = L.tileLayer.wms(servicio1, {
     layers: layer1,
     format: 'image/jpeg',
     transparent: true,
-    attribution : 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>',
+    attribution : attribution1,
 });
 
   var myLayer4 = L.tileLayer.wms(servicio2, {
@@ -46,7 +48,7 @@ $(function() {
     format: 'image/jpeg',
     transparent: true,
     crs: crs25831,
-    attribution : 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>',
+    attribution : attribution2,
 });
 
   map.addLayer(myLayer1);
