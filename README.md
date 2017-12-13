@@ -2,7 +2,7 @@
 
 Tool to compare 2 WMS services. 
 
-Demo: http://betaportal.icgc.cat/comparador-costa/index.html
+**Demo:** http://betaportal.icgc.cat/comparador-costa/index.html
 
 ## Installation
 Copy the files within a folder on a web server
