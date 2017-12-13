@@ -2,6 +2,8 @@
 
 Tool to compare 2 WMS services. 
 
+Demo: http://betaportal.icgc.cat/comparador-costa/index.html
+
 ## Installation
 Copy the files within a folder on a web server
 
@@ -25,7 +27,7 @@ When selecting a result, the map focuses on the coordinate of the point.
 
 More information at http://betaportal.icgc.cat/wordpress/visorcosta/
 
-![alt text](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_2.jpg "Compare side by side")
+[![Compare side by side](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_2.jpg)](http://betaportal.icgc.cat/comparador-costa/index.html)
 
 ![alt text](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_3.jpg "Compare slider")
 
