@@ -1,29 +1,35 @@
-# Comparador Costa
+#Comparador Costa
 
-Herramienta para comparar 2 servicios WMS. 
+Tool to compare 2 WMS services. 
 
-## Instalación
-Copiar los archivos dentro de una carpeta en un servidor web
+## Installation
+Copy the files within a folder on a web server
 
-## Reutilización y adaptación
+## Reuse and adaptation
 
-### Cambiar las capas bases para comparar
-En el archivo index.js modificar las variables servicio(1 ó 2), layer(1 ó 2) y attribution(1 ó 2).
+### Change base layers to compare
+In the index.js file modify the variables service (1 or 2), layer (1 or 2) and attribution (1 or 2).
 
-Ejemplo
-- servicio1: contiene la URL del servicio WMS que se mostrá en la ventana de la izquierda de la aplicación
-- layer1: nombre de la capa del servicio WMS que se quiere mostrar
-- attribution1: texto de atribución de la capa.
+Example
+- service1: contains the URL of the WMS service that is displayed in the window on the left of the application
+- layer1: name of the WMS service layer to be displayed
+- attribution1: text of attribution of the layer.
 
-### Herramienta de búsqueda
+### Search tool
 
-El archivo listBookmarks.js contiene un geojson de elementos (puntos) que son los que aparecen como resultados en la herramienta de búsqueda. 
+The file listBookmarks.js contains a geojson of elements (points) that are those that appear as results in the search tool.
 
-La herramienta de búsqueda utiliza la propiedad "NOM" para buscar los resultados. 
+The search tool uses the "NOM" property to search the results.
 
-Al seleccionar un resultado el mapa se centra en la coordenada del punto.   
+When selecting a result, the map focuses on the coordinate of the point.
+
+More information at http://betaportal.icgc.cat/wordpress/visorcosta/
+
+![alt text](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_2.jpg "Compare side by side")
+
+![alt text](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_3.jpg "Compare slider")
 
 ## License
 
-Copyright (c) 2017- Geostarters (BEERWARE License)  
+Copyright (c) 2017- Geostarters (MIT License)  
 See LICENSE file for more info.
