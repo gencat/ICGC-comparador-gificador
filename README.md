@@ -25,6 +25,8 @@ The search tool uses the "NOM" property to search the results.
 
 When selecting a result, the map focuses on the coordinate of the point.
 
+### Demo
+
 More information at http://betaportal.icgc.cat/wordpress/visorcosta/
 
 [![Compare side by side](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_2.jpg)](http://betaportal.icgc.cat/comparador-costa/index.html)
