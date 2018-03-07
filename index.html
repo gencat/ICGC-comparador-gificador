@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparador costa</title>
+    <title>Comparador ortofotos</title>
   </head>
   <body>
     <header>
@@ -19,8 +19,7 @@
           <a href="http://www.icgc.cat" target="_blank" ><img src="css/Logo_icgc_blanc.png" alt="ICGC" class="logo"></a>
         </div>
         <div class="col-xs-10 text-center">
-          <h5>VISOR DE L'EVOLUCIÓ DE LA COSTA</h5>
-          <h6 class="hidden-xs">(TOT el litoral català)</h6>
+          <h5>VISOR DE L'EVOLUCIÓ DEL TERRITORI</h5>
         </div>
         <div class="col-xs-2 text-center">
           <span class="glyphicon glyphicon-info-sign info-btn" aria-hidden="true"></span>
@@ -28,17 +27,21 @@
       </div>
       <div class="row subtitle2">
         <div class="col-xs-12 text-center">
-          <select class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+          <select  id="list-booksmarks" class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
 
           </select>
         </div>
       </div>
       <div class="row subtitle text-center">
         <div class="col-xs-6">
-        Ortoimatge 2015
+          <select id="list-ortos1" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+
+          </select>
         </div>
         <div class="col-xs-6">
-        Temporal gener 2017
+          <select id="list-ortos2" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+
+          </select>
         </div>
       </div>
     </header>
@@ -52,11 +55,16 @@
 
     <footer class="footer">
       <div class="row links">
-        <div class="hidden-xs col-sm-6 text-center enllaca">
+        <div class="hidden-xs col-sm-4 text-center enllaca">
           <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
           Enllaça
         </div>
-        <div class="col-xs-12 col-sm-6 text-center">
+        <div class="col-xs-12 col-sm-4 text-center">
+          <button type="button" id="btn-gif" class="btn btn-warning">
+            Generar GIF
+          </button>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
           <div id="share">
 
           </div>
@@ -130,6 +138,26 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <div id="gifmodal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email"><span lang="ca">Correu electrònic</span>:</label>
+              <input class="form-control" id="email" type="email">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Tancar</button>
+            <button type="button" id="btn-send-gif" class="btn btn-primary">Generar GIF</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div id="alertmodal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -141,6 +169,8 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+
 
   </body>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
