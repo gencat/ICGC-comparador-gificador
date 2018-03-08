@@ -16,24 +16,24 @@ html body .container {
 
 header {
     width: 100%;
-    background-color: #4496a1;
+    background-color: #604c8d;
     color: #ffffff;
 }
 
 .title{
-  background-color: #4496a1;
+  background-color: #604c8d;
   color: #ffffff;
 }
 
 footer {
   width: 100%;
-  min-height: 40px;
-  background-color: #4496a1;
+  /*min-height: 40px;*/
+  background-color: #604c8d;
   color: #ffffff;
 }
 
 header .subtitle{
-  background-color: #5cc8d5;
+  background-color: #8373A9;
   display: flex;
   align-items: center;
 }
@@ -43,7 +43,7 @@ header .subtitle div{
 }
 
 header .subtitle2{
-  background-color: #5cc8d5;
+  background-color: #8373A9;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -87,7 +87,7 @@ footer div.row.links div span{
 }
 
 .modal-header{
-  background-color: #4496a1;
+  background-color: #604c8d;
   color: #ffffff;
 }
 
@@ -96,7 +96,7 @@ footer div.row.links div span{
 }
 
 .links{
-  height: 40px;
+  min-height: 40px;
 }
 
 .logo{
@@ -113,7 +113,7 @@ footer div.row.links div span{
 }
 
 .selectpicker{
-  background-color: #5cc8d5;
+  background-color: #8373A9;
 }
 
 .bootstrap-select > .dropdown-toggle {
@@ -123,25 +123,24 @@ footer div.row.links div span{
 .btn-dropdown{
   color: #ffffff;
   border: none;
-  background-color: #5cc8d5;
+  background-color: #8373A9;
   border-radius: 0px;
 }
 
 .btn-dropdown:hover{
   color: #ffffff;
-  background-color: #4496a1;
+  background-color: #604c8d;
 }
 
 .btn-dropdown:focus{
   color: #ffffff;
-  background-color: #5cc8d5;
+  background-color: #8373A9;
 }
 
 .btn-dropdown .open{
   color: #ffffff;
-  background-color: #4496a1;
+  background-color: #604c8d;
 }
-
 
 .list-booksmarks div.dropdown-menu{
   z-index: 6000;
@@ -193,10 +192,6 @@ footer div.row.links div span{
   margin-left: -8px;
 }
 
-.btn-sticky button.selected img{
-  color: #ff0000;
-}
-
 .panel-sticky{
   display: none;
 }
@@ -213,7 +208,14 @@ footer div.row.links div span{
 }
 
 .jssocials-share, .jssocials-share-link{
-    background-color: #4496a1 !important;
+    background-color: #604c8d !important;
+}
+
+.btn-xl {
+  font-size: 26px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 5px 0px;
 }
 
 @media (max-width: 768px) and (orientation:landscape) {

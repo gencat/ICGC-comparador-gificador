@@ -2,7 +2,7 @@
 
 Tool to compare 2 WMS services. 
 
-**Demo:** http://betaportal.icgc.cat/comparador-gificador/index.html
+**Demo:** http://betaportal.icgc.cat/geogif/index.html
 
 ## Installation
 Copy the files within a folder on a web server
@@ -27,11 +27,13 @@ The "Generar GIF" button makes a call to the service https://github.com/OpenICGC
 
 ### Demo
 
-More information at http://betaportal.icgc.cat/wordpress/visorcosta/
+More information at http://betaportal.icgc.cat/wordpress/geogif/
 
-[![Compare side by side](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_2.jpg)](http://betaportal.icgc.cat/comparador-costa/index.html)
+[![Comparador](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2014/01/Comparador-històric-del-territori.png)](http://betaportal.icgc.cat/geogif/index.html)
 
-[![Compare slider](http://betaportal.icgc.cat/wordpress/wp-content/uploads/2017/01/Comparador_costa_3.jpg)](http://betaportal.icgc.cat/comparador-costa/index.html)
+Example Gif
+
+[![Example gif](https://github.com/OpenICGC/wms2gif/blob/master/generated/0.gif?raw=true)](http://betaportal.icgc.cat/geogif/index.html)
 
 ## License
 

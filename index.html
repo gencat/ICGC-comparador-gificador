@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparador ortofotos</title>
+    <title>Comparador històric del territori</title>
   </head>
   <body>
     <header>
@@ -19,7 +21,7 @@
           <a href="http://www.icgc.cat" target="_blank" ><img src="css/Logo_icgc_blanc.png" alt="ICGC" class="logo"></a>
         </div>
         <div class="col-xs-10 text-center">
-          <h5>VISOR DE L'EVOLUCIÓ DEL TERRITORI</h5>
+          <h5><b>COMPARADOR HISTÒRIC DEL TERRITORI</b></h5>
         </div>
         <div class="col-xs-2 text-center">
           <span class="glyphicon glyphicon-info-sign info-btn" aria-hidden="true"></span>
@@ -27,19 +29,19 @@
       </div>
       <div class="row subtitle2">
         <div class="col-xs-12 text-center">
-          <select  id="list-booksmarks" class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+          <select  id="list-booksmarks" class="list-booksmarks hide" data-live-search="true" title="Selecciona un municipi <span class='glyphicon glyphicon-search'>" data-style="btn-dropdown">
 
           </select>
         </div>
       </div>
       <div class="row subtitle text-center">
         <div class="col-xs-6">
-          <select id="list-ortos1" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+          <select id="list-ortos1" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-dropdown">
 
           </select>
         </div>
         <div class="col-xs-6">
-          <select id="list-ortos2" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-info btn-dropdown">
+          <select id="list-ortos2" class="list-booksmarks hide" data-live-search="true" title="Selecciona un any <span class='glyphicon glyphicon-search'>" data-style="btn-dropdown">
 
           </select>
         </div>
@@ -60,8 +62,8 @@
           Enllaça
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
-          <button type="button" id="btn-gif" class="btn btn-warning">
-            Generar GIF
+          <button type="button" id="btn-gif" class="btn btn-warning btn-xl active">
+            <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small> Generar animació
           </button>
         </div>
         <div class="col-xs-12 col-sm-4 text-center">
@@ -170,13 +172,13 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-
-
   </body>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
   <script src="http://rawgithub.com/kartena/Proj4Leaflet/master/lib/proj4-compressed.js" type="text/javascript"></script>
   <script src="https://rawgithub.com/kartena/Proj4Leaflet/master/src/proj4leaflet.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js"></script>
