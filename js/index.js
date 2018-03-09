@@ -1,11 +1,4 @@
 $(function() {
-  /*
-  var crs25831 = new L.Proj.CRS('EPSG:25831','+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
-     {
-          resolutions: [1100, 550, 275, 100, 50, 25, 10, 5, 2, 1, 0.5, 0.25]
-     }
-  );
-  */
 
   var initPoint = [41.4359, 2.2403];
   var initZoom = 16;
@@ -91,7 +84,6 @@ $(function() {
 
   $('#list-booksmarks').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
-    console.debug(selectedD);
     var center = hash.parseHash(selectedD);
     map.setView(center.center, center.zoom);
   });
@@ -119,10 +111,8 @@ $(function() {
 
   $('#list-booksmarks').selectpicker('refresh');
 
-
   $('#list-ortos1').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
-    console.log(selectedD);
     var params = selectedD.split("@#_#@");
     myLayer1.setUrl(params[0]).setParams({layers: params[1]});
     myLayer3.setUrl(params[0]).setParams({layers: params[1]});
@@ -130,7 +120,6 @@ $(function() {
 
   $('#list-ortos2').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
-    console.log(selectedD);
     var params = selectedD.split("@#_#@");
     myLayer2.setUrl(params[0]).setParams({layers: params[1]});
     myLayer4.setUrl(params[0]).setParams({layers: params[1]});
@@ -151,7 +140,6 @@ $(function() {
   $('#list-ortos2').removeClass('hide');
   $('#list-ortos2').selectpicker('refresh');
   $('#list-ortos2').selectpicker('val', servicio2+'@#_#@'+layer2);
-
 
   $('.info-btn').on('click',function(){
     $('#infomodal').modal('show');
