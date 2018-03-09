@@ -214,11 +214,6 @@ $(function() {
     });
   }
 
-  $(document).hotkeys('alt+ctrl+j', 'alt+ctrl+m', function(){
-    $('#alertmodal .alertmodal-body').html("Aquesta és l'última aplicació publicada amb Jaume Miranda com a director de l'Institut Cartogràfic i Geològic de Catalunya<br><br><i>tempus fugit</i>");
-    $('#alertmodal').modal('show');
-  });
-
   function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
