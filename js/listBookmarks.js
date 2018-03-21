@@ -6631,7 +6631,7 @@ var bookmarks = [
 ];
 
 var ortos = [
-{"url": "http://geoserveis.icgc.cat/icc_mapesbase/wms/service?", "layer": "mtc5m", "label": "Mapa 1:5.000"},
+{"url": "http://geoserveis.icc.cat/icc_mapesmultibase/noutm/wms/service?", "layer": "topo", "label": "Mapa topogràfic"},
 {"url": "http://geoserveis.icgc.cat/icc_mapesbase/wms/service?", "layer": "orto5m", "label": "Ortofoto vigent"},
 {"url": "http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?", "layer": "orto5m2016", "label": "Ortofoto 2016"},
 {"url": "http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?", "layer": "orto5m2015", "label": "Ortofoto 2015"},

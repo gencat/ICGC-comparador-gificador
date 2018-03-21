@@ -218,6 +218,15 @@ footer div.row.links div span{
   margin: 5px 0px;
 }
 
+.links a{
+  color: #ffffff;
+}
+
+.divider{
+  border-left:1px solid white;
+  margin: 0px 3px 0px 3px;
+}
+
 @media (max-width: 768px) and (orientation:landscape) {
 
     header .title{
