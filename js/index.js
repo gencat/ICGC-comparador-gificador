@@ -164,18 +164,10 @@ $(function() {
           email: email,
           bbox: bbox
         }
-      }).done(function(results) {
+      }).always(function(results) {
         $('#gifmodal').modal('hide');
         $('#alertmodal .alertmodal-body').html("Correu enviat");
         $('#alertmodal').modal('show');
-        /*
-        console.log(results);
-        if(results.ok){
-          $('#gifmodal').modal('hide');
-          $('#alertmodal .alertmodal-body').html("Correu enviat");
-          $('#alertmodal').modal('show');  
-        }
-        */
       });
     }
   });
