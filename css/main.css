@@ -236,12 +236,12 @@ footer div.row.links div span{
 }
 
 .btn-sync svg, .btn-sidebyside svg {
-  width: 150%;
-  height: 139%;
+  width: 140%;
+  height: 125%;
   stroke: #868686;
   fill: #868686;
-  margin-left: -16px;
-  margin-top: -8px;
+  margin-left: -13px;
+  margin-top: -5px;
 }
 
 .btn-sync, .btn-sidebyside{

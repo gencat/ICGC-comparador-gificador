@@ -3,9 +3,9 @@ $(function() {
   var initPoint = [41.4359, 2.2403];
   var initZoom = 16;
   var maxZoom = 18;
-  var map = L.map('mapid',{attributionControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
-  var map1 = L.map('mapid1',{attributionControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
-  var map2 = L.map('mapid2',{attributionControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
+  var map = L.map('mapid',{attributionControl: false, zoomControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
+  var map1 = L.map('mapid1',{attributionControl: false, zoomControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
+  var map2 = L.map('mapid2',{attributionControl: false, zoomControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
 
   var urlWmsHistoric = "http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?";
 
