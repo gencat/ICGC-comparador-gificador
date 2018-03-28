@@ -202,8 +202,8 @@ $(function() {
         }
       }).always(function(results) {
         $('#gifmodal').modal('hide');
-        $('#alertmodal .alertmodal-body').html("Correu enviat");
-        $('#alertmodal').modal('show');
+        //$('#alertmodal .alertmodal-body').html("Correu enviat");
+        //$('#alertmodal').modal('show');
       });
     }
   });
