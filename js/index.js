@@ -61,6 +61,9 @@ $(function() {
 
   $('#mapid').hide();
 
+  $('.panel-sticky').show();
+  $('.btn-sync').addClass('actived');
+
   $('.btn-sticky button').on('click',function(){
     $('.panel-sticky').show();
   });
@@ -69,7 +72,9 @@ $(function() {
     $('#mapid').hide();
     $('#mapid1').show();
     $('#mapid2').show();
-    $('.panel-sticky').hide();
+    //$('.panel-sticky').hide();
+    $('.btn-sync').addClass('actived');
+    $('.btn-sidebyside').removeClass('actived');
     map1.invalidateSize();
     map2.invalidateSize();
   });
@@ -79,13 +84,44 @@ $(function() {
     $('#mapid1').hide();
     $('#mapid2').hide();
     map.invalidateSize();
-    $('.panel-sticky').hide();
+    $('.btn-sidebyside').addClass('actived');
+    $('.btn-sync').removeClass('actived');
+    //$('.panel-sticky').hide();
   });
 
   $('#list-booksmarks').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
     var center = hash.parseHash(selectedD);
     map.setView(center.center, center.zoom);
+  });
+
+  $('img.svg').each(function(){
+    var $img = jQuery(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+
+    jQuery.get(imgURL, function(data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = jQuery(data).find('svg');
+
+        // Add replaced image's ID to the new SVG
+        if(typeof imgID !== 'undefined') {
+            $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if(typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+
+    }, 'xml');
+
   });
 
   var features = bookmarks;

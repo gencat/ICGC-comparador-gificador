@@ -227,6 +227,39 @@ footer div.row.links div span{
   margin: 0px 3px 0px 3px;
 }
 
+.btn-swipe svg {
+  width: 225%;
+  height: 100%;
+  stroke: #868686;
+  fill: #868686;
+  margin-left: -10px;
+}
+
+.btn-sync svg, .btn-sidebyside svg {
+  width: 150%;
+  height: 139%;
+  stroke: #868686;
+  fill: #868686;
+  margin-left: -16px;
+  margin-top: -8px;
+}
+
+.btn-sync, .btn-sidebyside{
+  border-width: 0px;
+}
+
+.btn-sync.actived svg, .btn-sidebyside.actived svg{
+  stroke: #ffc200;
+  fill: #ffc200;
+}
+
+.btn-options{
+  -webkit-filter: hue-rotate(260deg) saturate(100) saturate(.2) brightness(220%);
+  filter: hue-rotate(260deg) saturate(100) saturate(.2) brightness(220%);
+}
+
+
+
 @media (max-width: 768px) and (orientation:landscape) {
 
     header .title{
