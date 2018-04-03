@@ -89,6 +89,10 @@ $(function() {
     //$('.panel-sticky').hide();
   });
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
   $('#list-booksmarks').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
     var center = hash.parseHash(selectedD);
