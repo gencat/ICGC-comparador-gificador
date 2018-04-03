@@ -195,7 +195,7 @@ $(function() {
       var NE = L.CRS.EPSG3857.project(map.getBounds().getNorthEast());
       var bbox = SW.x+","+SW.y+","+NE.x+","+NE.y;
       $.ajax({
-        url: "http://betaserver2.icgc.cat/wms2gif/",
+        url: "https://betaserver2.icgc.cat/wms2gif/",
         data: {
           email: email,
           bbox: bbox
