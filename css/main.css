@@ -212,7 +212,7 @@ footer div.row.links div span{
 }
 
 .btn-xl {
-  font-size: 26px;
+  font-size: 20px;
   padding: 8px 10px;
   border-radius: 8px;
   margin: 5px 0px;
@@ -258,8 +258,6 @@ footer div.row.links div span{
   filter: hue-rotate(260deg) saturate(100) saturate(.2) brightness(220%);
 }
 
-
-
 @media (max-width: 768px) and (orientation:landscape) {
 
     header .title{
@@ -282,6 +280,9 @@ footer div.row.links div span{
       min-height: 0px;
     }
 
+    .btn-xl {
+      font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) and (orientation:portrait) {
