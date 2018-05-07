@@ -23,7 +23,7 @@ When selecting a result, the map focuses on the coordinate of the point.
 
 ### Create GIF
 
-The "Generar GIF" button makes a call to the service https://github.com/OpenICGC/wms2gif
+The "Generar GIF" button makes a call to the service https://github.com/gencat/ICGC-wms2gif
 
 ### Demo
 
@@ -33,7 +33,7 @@ More information at http://betaportal.icgc.cat/wordpress/geogif/
 
 Example Gif
 
-[![Example gif](https://github.com/OpenICGC/wms2gif/blob/master/generated/0.gif?raw=true)](http://betaportal.icgc.cat/geogif/index.html)
+[![Example gif](https://github.com/gencat/ICGC-wms2gif/blob/master/generated/0.gif?raw=true)](http://betaportal.icgc.cat/geogif/index.html)
 
 ## License
 
