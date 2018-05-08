@@ -107,6 +107,20 @@ footer div.row.links div span{
   height: 100%;
 }
 
+
+.topoMap {
+  height: 50px;
+  width: 50px;
+  float: left;
+  position: absolute;
+  bottom: 67px;
+  left: 15px;
+  background: url(topo.png) no-repeat scroll -10px -30px;
+  z-index: 9000;
+  cursor: pointer;
+  border: 1px solid #ffc200;
+}
+
 .info-btn{
   font-size: 16pt;
   cursor: pointer;

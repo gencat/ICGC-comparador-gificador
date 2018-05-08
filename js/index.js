@@ -89,6 +89,12 @@ $(function() {
     //$('.panel-sticky').hide();
   });
 
+  $('.topoMap').on('click',function(){
+    var orto = ortos[0];
+    $('#list-ortos1').selectpicker('val', orto.url+'@#_#@'+orto.layer);
+    $('#list-ortos1').change();
+  });
+
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
@@ -153,6 +159,9 @@ $(function() {
 
   $('#list-ortos1').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
+    if(!selectedD){
+      selectedD = $(this).find('option:selected').val()
+    }
     var params = selectedD.split("@#_#@");
     myLayer1.setUrl(params[0]).setParams({layers: params[1]});
     myLayer3.setUrl(params[0]).setParams({layers: params[1]});
@@ -160,6 +169,9 @@ $(function() {
 
   $('#list-ortos2').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue) {
     var selectedD = $(this).find('option').eq(clickedIndex).val();
+    if(!selectedD){
+      selectedD = $(this).find('option:selected').val()
+    }
     var params = selectedD.split("@#_#@");
     myLayer2.setUrl(params[0]).setParams({layers: params[1]});
     myLayer4.setUrl(params[0]).setParams({layers: params[1]});
