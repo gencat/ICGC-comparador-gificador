@@ -209,6 +209,10 @@ $(function() {
     }else{
       var SW = L.CRS.EPSG3857.project(map.getBounds().getSouthWest());
       var NE = L.CRS.EPSG3857.project(map.getBounds().getNorthEast());
+      if(SW.x === NE.x){
+        SW = L.CRS.EPSG3857.project(map1.getBounds().getSouthWest());
+        NE = L.CRS.EPSG3857.project(map1.getBounds().getNorthEast());
+      }
       var bbox = SW.x+","+SW.y+","+NE.x+","+NE.y;
       $.ajax({
         url: "https://betaserver2.icgc.cat/wms2gif/",

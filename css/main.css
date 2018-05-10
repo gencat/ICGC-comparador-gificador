@@ -7,6 +7,7 @@ html body {
   display: flex;
   flex-direction: column;
 }
+
 html body .container {
   width: 100%;
   overflow-y: auto;
@@ -116,7 +117,7 @@ footer div.row.links div span{
   bottom: 67px;
   left: 15px;
   background: url(topo.png) no-repeat scroll -10px -30px;
-  z-index: 9000;
+  z-index: 1000;
   cursor: pointer;
   border: 1px solid #ffc200;
 }
@@ -282,23 +283,43 @@ footer div.row.links div span{
       display: none !important;
     }
 
-    footer div.links{
-      display: none !important;
-    }
-
     .btn-sticky{
-      bottom: 15px;
+      bottom: 76px;
     }
 
     footer{
-      min-height: 0px;
+      min-height: 70px;
     }
 
     .btn-xl {
       font-size: 14px;
     }
+
+    .topoMap{
+      bottom: 75px;
+      left: 5px;
+    }
+
+    .panel-sticky{
+      bottom: 84px;
+    }
 }
 
 @media (max-width: 768px) and (orientation:portrait) {
+  .topoMap{
+    bottom: 100px;
+    left: 5px;
+  }
 
+  .btn-xl{
+    font-size: 14px;
+  }
+
+  .panel-sticky{
+    bottom: 158px;
+  }
+
+  .modal img{
+    max-width: 95%;
+  } 
 }
