@@ -2,7 +2,7 @@
 
 Tool to compare 2 WMS services. 
 
-**Demo:** http://betaportal.icgc.cat/geogif/index.html
+**Demo:** https://betaportal.icgc.cat/comparador-gificador/
 
 ## Installation
 Copy the files within a folder on a web server
@@ -27,13 +27,13 @@ The "Generar GIF" button makes a call to the service https://github.com/gencat/I
 
 ### Demo
 
-More information at http://betaportal.icgc.cat/wordpress/geogif/
+More information at http://betaportal.icgc.cat/wordpress/comparadorgif/
 
-[![Comparador](https://betaportal.icgc.cat/wordpress/wp-content/uploads/2018/03/Generador-dimatges-animades_1.png)](http://betaportal.icgc.cat/geogif/index.html)
+[![Comparador](https://betaportal.icgc.cat/wordpress/wp-content/uploads/2018/03/Generador-dimatges-animades_1.png)](https://betaportal.icgc.cat/comparador-gificador/)
 
 Example Gif
 
-[![Example gif](https://github.com/gencat/ICGC-wms2gif/blob/master/generated/0.gif?raw=true)](http://betaportal.icgc.cat/geogif/index.html)
+[![Example gif](https://github.com/gencat/ICGC-wms2gif/blob/master/generated/0.gif?raw=true)](https://betaportal.icgc.cat/comparador-gificador/)
 
 ## License
 
