@@ -222,8 +222,8 @@ $(function() {
         }
       }).always(function(results) {
         $('#gifmodal').modal('hide');
-        //$('#alertmodal .alertmodal-body').html("Correu enviat");
-        //$('#alertmodal').modal('show');
+        //$('#alertmodal .alertmodal-body').html("Petició en procés en breus rebràs un correu electrònic amb l'adreça de descàrrega");
+        $('#alertmodal').modal('show');
       });
     }
   });
