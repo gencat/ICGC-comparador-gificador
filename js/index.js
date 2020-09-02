@@ -8,14 +8,14 @@ $(function() {
   var map2 = L.map('mapid2',{attributionControl: false, zoomControl: false, maxZoom: maxZoom, center: initPoint, zoom: initZoom});
 
   //var urlWmsHistoric = "http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?";
-  var urlWmsHistoric = "http://tilemaps.icgc.cat/mapfactory/service?"
+  var urlWmsHistoric = "https://tilemaps.icgc.cat/mapfactory/service?"
 
-  var servicio2 = 'http://geoserveis.icgc.cat/icc_mapesbase/wms/service?';
+  var servicio2 = 'https://geoserveis.icgc.cat/icc_mapesbase/wms/service?';
   var layer2 = 'orto5m';
   var attribution2 = 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>';
 
   //var servicio1 = 'http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?';
-  var servicio1 = "http://tilemaps.icgc.cat/mapfactory/service?"
+  var servicio1 = "https://tilemaps.icgc.cat/mapfactory/service?"
   var layer1 = 'ovaa10m';
   var attribution1 = 'Mapa &copy; <a href="http://www.icgc.cat">Institut Cartogràfic i Geològic de Catalunya</a>';
 

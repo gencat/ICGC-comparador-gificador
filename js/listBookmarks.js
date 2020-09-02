@@ -6630,12 +6630,12 @@ var bookmarks = [
   }
 ];
 //var _url="http://geoserveis.icgc.cat/icc_ortohistorica/wms/service?";
-var _url="http://tilemaps.icgc.cat/mapfactory/service?";
+var _url="https://tilemaps.icgc.cat/mapfactory/service?";
 
 
 var ortos = [
-{"url": "http://geoserveis.icc.cat/icc_mapesmultibase/noutm/wms/service?", "layer": "topo", "label": "Mapa topogràfic"},
-{"url": "http://geoserveis.icgc.cat/icc_mapesbase/wms/service?", "layer": "orto5m", "label": "Ortofoto vigent"},
+{"url": "https://geoserveis.icc.cat/icc_mapesmultibase/noutm/wms/service?", "layer": "topo", "label": "Mapa topogràfic"},
+{"url": "https://geoserveis.icgc.cat/icc_mapesbase/wms/service?", "layer": "orto5m", "label": "Ortofoto vigent"},
 {"url": _url, "layer": "orto5m2016", "label": "Ortofoto 2016"},
 {"url": _url, "layer": "orto5m2015", "label": "Ortofoto 2015"},
 {"url": _url, "layer": "orto5m2014", "label": "Ortofoto 2014"},
@@ -6659,7 +6659,7 @@ var ortos = [
 {"url": _url, "layer": "orto5m1996", "label": "Ortofoto 1996 (parcial)"},
 {"url": _url, "layer": "orto5m1995", "label": "Ortofoto 1995 (parcial)"},
 {"url": _url, "layer": "orto5m1994", "label": "Ortofoto 1994 (parcial)"},
-{"url": _url, "layer": "orto5m1993", "label": "Ortofoto 1993 (parcial)"},
+//{"url": _url, "layer": "orto5m1993", "label": "Ortofoto 1993 (parcial)"},
 {"url": _url, "layer": "orto5m1992", "label": "Ortofoto 1992 (parcial)"},
 {"url": _url, "layer": "orto5m1991", "label": "Ortofoto 1991 (parcial)"},
 {"url": _url, "layer": "orto5m1990", "label": "Ortofoto 1990 (parcial)"},
